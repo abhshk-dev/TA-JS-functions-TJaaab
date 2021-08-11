@@ -69,6 +69,22 @@ getTable();
   - Prompts a message saying `Enter a year` and store the value into variable named`year`
   - Alert `[year] is a leap year` otherwise `[year] is not a leap year`
 */
+function isLeapYear(){
+  var year=+prompt(`Enter the year`);
+  if(year%400===0){
+    alert(`${year} is a leap year`);
+  }
+  else if(year%100===0){
+    alert(`${year} is not a leap year`);
+  }
+  else if(year%4===0){
+    alert(`${year} is a leap year`);
+  }
+  else{
+    alert(`${year} is not a leap year`);
+  }
+}
+isLeapYear();
 
 /*
 6. Create a function named `getFactorial` with the following steps:
@@ -77,3 +93,13 @@ getTable();
   - Alert `The factorial of [number] is [factorial]`
 
 */
+
+function getFactorial(){
+  let factNum=+prompt(`Enter a number`);
+  let final=1;
+  for(let i=factNum;i>=1;i--){
+    
+    final=final*i;
+  }
+  alert(`${final}`);
+}
