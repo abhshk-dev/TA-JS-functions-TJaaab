@@ -5,6 +5,10 @@ Write a function named convertToString that accepts a number and converts the nu
 
 Do the following for the given problem:
 */
+function convertToString(num){
+  let num=Number(prompt(`Enter a number`));
+  let convert=String(num);
+}
 
 // - Write a Function Decleration
 function convertToString(n) {
